@@ -4,11 +4,9 @@ File Name: styles.css */
 
 /* Color variables */
 :root {
-  --olive: #606c38;
-  --dark-olive: #283618;
-  --cream: #fffae0;
-  --tan: #dda15e;
-  --burnt-orange: #bc6c25;
+    --gvblue: #0032A0;
+    --carillon: #BA6F4c;
+    --archway: #dec197;
 }
 
 /* Css reset */
@@ -29,8 +27,9 @@ aside {
     padding: 0;
     border: 0;
 }
+
 .mobile {
-    display:block;
+    display: block;
 }
 
 .tablet-desktop {
@@ -38,27 +37,41 @@ aside {
 }
 
 main {
-    min-height: 300px;
+    min-height: 55vh;
+    margin: auto;
 }
 
 /* text style rules */
 h1 {
-    font-family: 'Carter One', cursive;
-    color: var(--burnt-orange);
-    text-align: center;
+    font-family: "Alfa Slab One", cursive;
+    color: var(--gvblue);
+    text-align: left;
     padding: 2%;
+    font-size: 1.5em;
+}
+
+header {
+    display: flex;
+    margin: 4% 0 0 2%;
+    align-items: center;
+}
+
+header img {
+    max-width: 25%;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
-    color: var(--dark-olive);
+    color: #000;
     text-align: center;
     padding: 2%;
 }
 
 /* style rules for body and images */
 body {
-    background-color: var(--cream);
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
 }
 
 img {
@@ -69,26 +82,45 @@ img {
 /* Nav bar style rules -- mobile */
 nav {
     text-align: center;
-    background-color: var(--olive);
+    background-color: var(--gvblue);
 }
 
 nav ul {
-    padding: 2% 0;
+    list-style-type: none;
+    color: white;
 }
 
 nav ul li {
-    border-top: var(--cream) solid 1px;
-    padding: 1%;
+    border-top: white solid 1px;
+    padding: 3%;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul li:first-child {
+    border-top: none;
 }
 
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: var(--cream);
+    color: white;
+}
+
+h2 {
+    font-family: "Alfa Slab One", cursive;
+    color: var(--gvblue);
+    text-align: center;
+    font-size: 4em;
+}
+
+p {
+    font-size: 1.25em;
+    padding: 0 2% 6% 6%;
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px), print {
+@media screen and (min-width: 630px),
+print {
 
     /* Tablet Viewport: show tablet-desktop class, hide mobile class*/
     .tablet-desktop {
@@ -99,8 +131,23 @@ nav ul li a {
         display: none;
     }
 
+    html {
+        background-image: url("/images/background.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
     h1 {
+        font-family: "Alfa Slab One", cursive;
+        color: var(--gvblue);
+        text-align: left;
+        padding: 2%;
         font-size: 4em;
+    }
+
+    nav ul {
+        padding: 2%;
     }
 
     nav ul li {
@@ -116,7 +163,8 @@ nav ul li a {
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1015px), print {
+@media screen and (min-width: 1015px),
+print {
     nav ul li:hover {
         background-color: var(--dark-olive);
     }
