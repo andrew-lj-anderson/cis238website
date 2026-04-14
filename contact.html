@@ -11,10 +11,11 @@ Aiden Webber
 <html lang="en">
 
 <head>
-	<title>Outdoor Adventures</title>
+	<title>Contact Us | Outdoor Adventures</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Contact Outdoor Adventures via phone or email form."
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -62,6 +63,24 @@ Aiden Webber
 	</nav>
 	<!-- use the main area to add to the main content of the webpage-->
 	<main>
+		<h1>Questions? Call us!</h1>
+		<div class="mobile">
+			<h2><a href="tel:+15551234567">(555)-123-4567</a></h2>
+		</div>
+		<div class="tablet-desktop">
+			<h2>(555)-123-4567</h2>
+		</div>
+		<p>Or fill out this form, and we'll reach out to you via email!</p>
+		<form>
+			<fieldset>
+				<input type="text" id="name" name="name" required placeholder="Name">
+				<input type="email" id="email" name="email" required placeholder="Email">
+				<textarea id="question" name="question" rows="6" cols="50" required placeholder="Your question here"></textarea>
+			</fieldset>
+
+			<input type="submit" id="submit" value="Submit Form" class="btn">
+
+		</form>
 	</main>
 	<!--use the footer area to add webpage footer content-->
 	<footer>

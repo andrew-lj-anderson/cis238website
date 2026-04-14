@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- 
+Group Website Project
+Home Page
+Andrew Anderson
+!-->
+
+<html lang="en">
+
+<head>
+	<title>Home | Outdoor Adventures</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Here at Outdoor Adventures, our goal is simple: Make the outdoors accessible to everybody. Whether you're a
+			seasoned professional, or just buying your first pair of hiking shoes, we're here to support you every step
+			of the way!"
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Carter+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="/images/oalogo.ico">
+</head>
+
+<body>
+	<!-- use the header area for the website name or logo -->
+	<header>
+		<h1 class="mobile">Outdoor<br>Adventures</h1>
+		<h1 class="tablet-desktop">Outdoor Adventures</h1>
+	</header>
+	<!-- use the nav area to add hyperlinks to other pages within the site-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="fishing.html">Fishing</a>
+			<a href="boating.html">Boating</a>
+			<a href="photos.html">Photos</a>
+			<a href="safety.html">Safety</a>
+			<a href="hiking.html">Hiking</a>
+			<a href="camping.html">Camping</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="destinations.html">Destinations</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="fishing.html">Fishing</a></li>
+			<li><a href="boating.html">Boating</a></li>
+			<li><a href="photos.html">Photos</a></li>
+			<li><a href="safety.html">Safety</a></li>
+			<li><a href="hiking.html">Hiking</a></li>
+			<li><a href="camping.html">Camping</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="destinations.html">Destinations</a></li>
+		</ul>
+	</nav>
+	<!-- use the main area to add to the main content of the webpage-->
+	<main>
+		<div class="tablet-desktop">
+			<img src="images/hero.jpg" alt="Aerial photo of group hiking on mountain">
+		</div>
+		<div class="mobile">
+			<img src="images/mobilehero.jpg" alt="Aerial photo of group hiking on mountain">
+		</div>
+		<h1>Our Mission</h1>
+		<p>Here at Outdoor Adventures, our goal is simple: Make the outdoors accessible to everybody. Whether you're a
+			seasoned professional, or just buying your first pair of hiking shoes, we're here to support you every step
+			of the way!</p>
+		<!-- Featured links -->
+		<h1>Featured Pages</h1>
+		<div class="featured-links">
+			<div class="mobile">
+				<div class="featured-link">
+					<figure class="featured-link">
+						<img src="images/fishing.png" alt="Tackle box">
+						<figcaption class="pictext"><a href="fishing.html">Fishing</a></figcaption>
+					</figure>
+					<figure class="featured-link">
+						<img src="images/camping.png" alt="Tent on the water">
+						<figcaption class="pictext"><a href="camping.html">Camping</a></figcaption>
+					</figure>
+					<figure class="featured-link">
+						<img src="images/hiking.png" alt="Two people hiking a wooded trail">
+						<figcaption class="pictext"><a href="hiking.html">Hiking</a></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="tablet-desktop">
+				<figure class="featured-link">
+					<img src="images/fishing.png" alt="Tackle box">
+					<figcaption class="pictext"><a href="fishing.html">Fishing</a></figcaption>
+				</figure>
+				<figure class="featured-link">
+					<img src="images/camping.png" alt="Tent on the water">
+					<figcaption class="pictext"><a href="camping.html">Camping</a></figcaption>
+				</figure>
+				<figure class="featured-link">
+					<img src="images/hiking.png" alt="Two people hiking a wooded trail">
+					<figcaption class="pictext"><a href="hiking.html">Hiking</a></figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="tablet-desktop" id="gallery">
+			<div class="visit">
+				<h1>Visit Our Photo Gallery!</h1>
+				<a href="photos.html">
+					<p>Go to gallery</p>
+				</a>
+			</div>
+			<div class="photos">
+				<img src="images/gallery/chairs.png" alt="Two chairs on the shore">
+				<img src="images/gallery/boat3.png" alt="Aerial photo of boat">
+				<img src="images/gallery/boots.png" alt="Pair of rainboots with tent in background">
+				<img src="images/gallery/hammockguitar.png" alt="Man playing guitar in hammock">
+				<img src="images/gallery/climbing.png" alt="Woman on climbing wall">
+				<img src="images/gallery/chairs3.png" alt="Two chairs at a camprfire">
+			</div>
+		</div>
+	</main>
+	<!--use the footer area to add webpage footer content-->
+	<footer>
+		<p>&copy; Copyright 2026. All Rights Reserved.</p>
+	</footer>
+	<script src="scripts/scripts.js"></script>
+</body>
+
+</html>

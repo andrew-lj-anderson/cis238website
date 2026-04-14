@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 
+Group Website Project
+Photo Page
+Andrew Anderson
+!-->
+
+<html lang="en">
+
+<head>
+	<title>Photo Gallery | Outdoor Adventures</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Explore the vibrant photo gallery presented by Outdoor Adventures."
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Carter+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="/images/oalogo.ico">
+</head>
+
+<body>
+	<!-- use the header area for the website name or logo -->
+	<header>
+		<h1 class="mobile">Outdoor<br>Adventures</h1>
+		<h1 class="tablet-desktop">Outdoor Adventures</h1>
+	</header>
+	<!-- use the nav area to add hyperlinks to other pages within the site-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="fishing.html">Fishing</a>
+			<a href="boating.html">Boating</a>
+			<a href="photos.html">Photos</a>
+			<a href="safety.html">Safety</a>
+			<a href="hiking.html">Hiking</a>
+			<a href="camping.html">Camping</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="destinations.html">Destinations</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="fishing.html">Fishing</a></li>
+			<li><a href="boating.html">Boating</a></li>
+			<li><a href="photos.html">Photos</a></li>
+			<li><a href="safety.html">Safety</a></li>
+			<li><a href="hiking.html">Hiking</a></li>
+			<li><a href="camping.html">Camping</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="destinations.html">Destinations</a></li>
+		</ul>
+	</nav>
+	<!-- use the main area to add to the main content of the webpage-->
+	<main>
+		<div id="gallery">
+			<!-- # of pictures should be a multiple of 3 for proper desktop formatting -->
+			<div class="mobile">
+				<img src="images/gallery/boat1.png" alt="Pontoon boat on water">
+				<img src="images/gallery/boat3.png" alt="Aerial photo of boat and wake">
+				<img src="images/gallery/boots.png" alt="Yellow boots in front of a tent">
+				<img src="images/gallery/chairs.png" alt="Red chairs on the shore facing the water">
+				<img src="images/gallery/chairs2.png" alt="Chairs surrounding unlit firepit">
+				<img src="images/gallery/chairs3.png" alt="Two chairs in front of campfire">
+				<img src="images/gallery/climbing.png" alt="Woman on climbing wall">
+				<img src="images/gallery/hammock1.png" alt="Man in hammock hung between two trees">
+				<img src="images/gallery/hammock2.png" alt="Empty hammock">
+				<img src="images/gallery/hammockguitar.png" alt="Man playing guitar in hammock">
+				<img src="images/gallery/picturedrocks.png"alt="Aerial photo of pictured rocks, MI">
+				<img src="images/gallery/tents.png" alt="Two tents in front of trees">
+			</div>
+			<div class="tablet-desktop">
+				<img src="images/gallery/boat1.png" alt="Pontoon boat on water">
+				<img src="images/gallery/boat3.png" alt="Aerial photo of boat and wake">
+				<img src="images/gallery/boots.png" alt="Yellow boots in front of a tent">
+				<img src="images/gallery/chairs.png" alt="Red chairs on the shore facing the water">
+				<img src="images/gallery/chairs2.png" alt="Chairs surrounding unlit firepit">
+				<img src="images/gallery/chairs3.png" alt="Two chairs in front of campfire">
+				<img src="images/gallery/climbing.png" alt="Woman on climbing wall">
+				<img src="images/gallery/hammock1.png" alt="Man in hammock hung between two trees">
+				<img src="images/gallery/hammock2.png" alt="Empty hammock">
+				<img src="images/gallery/hammockguitar.png" alt="Man playing guitar in hammock">
+				<img src="images/gallery/picturedrocks.png"alt="Aerial photo of pictured rocks, MI">
+				<img src="images/gallery/tents.png" alt="Two tents in front of trees">
+			</div>
+		</div>
+	</main>
+	<!--use the footer area to add webpage footer content-->
+	<footer>
+		<p>&copy; Copyright 2026. All Rights Reserved.</p>
+	</footer>
+	<script src="scripts/scripts.js"></script>
+</body>
+
+</html>

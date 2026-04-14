@@ -4,11 +4,11 @@ File Name: styles.css */
 
 /* Color variables */
 :root {
-  --olive: #606c38;
-  --dark-olive: #283618;
-  --cream: #fffae0;
-  --tan: #dda15e;
-  --burnt-orange: #bc6c25;
+    --olive: #606c38;
+    --dark-olive: #283618;
+    --cream: #fffae0;
+    --tan: #dda15e;
+    --burnt-orange: #bc6c25;
 }
 
 /* Css reset */
@@ -24,16 +24,22 @@ ul,
 figure,
 figcaption,
 article,
-aside {
+aside,
+fieldset,
+input,
+textarea {
     margin: 0;
     padding: 0;
     border: 0;
 }
+
 .mobile {
-    display:block;
+    display: block;
 }
 
-.tablet-desktop {
+.tablet-desktop,
+#menu-links,
+#gallery .tablet-desktop {
     display: none;
 }
 
@@ -44,16 +50,26 @@ main {
 /* text style rules */
 h1 {
     font-family: 'Carter One', cursive;
-    color: var(--burnt-orange);
     text-align: center;
+}
+
+header h1 {
+    color: var(--cream);
     padding: 2%;
+    margin: 0;
+}
+
+h1 {
+    color: var(--olive);
+    margin: 2%;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     color: var(--dark-olive);
     text-align: center;
-    padding: 2%;
+    padding: 0 2%;
+    font-size: 1em;
 }
 
 /* style rules for body and images */
@@ -66,41 +82,135 @@ img {
     display: block;
 }
 
+.featured-links {
+    margin: auto;
+}
+
 /* Nav bar style rules -- mobile */
-nav {
+.mobile-nav {
     text-align: center;
     background-color: var(--olive);
 }
 
-nav ul {
-    padding: 2% 0;
-}
-
-nav ul li {
+.mobile-nav #menu-links a {
     border-top: var(--cream) solid 1px;
-    padding: 1%;
+    padding: 3%;
+    margin: auto 20%;
+    font-family: "Raleway", sans-serif;
 }
 
-nav ul li a {
+.mobile-nav #menu-links a:first-child {
+    border-top: none;
+}
+
+.mobile-nav a {
     display: block;
     text-decoration: none;
     color: var(--cream);
 }
 
+.menu-icon {
+    color: var(--cream);
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3%;
+}
+
+header {
+    background-color: var(--olive);
+}
+
+.featured-link {
+    margin: 2%;
+}
+
+.pictext {
+    bottom: 0;
+    background: var(--burnt-orange);
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: "Carter One", Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.pictext a {
+    text-decoration: none;
+    color: var(--cream);
+}
+
+#gallery .mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+#gallery .mobile img {
+    width: 90%;
+    margin: 5%;
+    box-shadow: 2px 2px 10px var(--dark-olive);
+}
+
+h2 {
+    text-align: center;
+    font-family: "Carter One", Arial, sans-serif;
+    font-size: 2em;
+    color: var(--olive);
+}
+
+h2 a {
+    text-decoration: none;
+    color: var(--olive);
+}
+
+fieldset,
+input,
+textarea {
+    padding: 2%;
+    display: block;
+    margin: 2% auto;
+    max-width: 400px;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+#submit {
+    background-color: var(--olive);
+    color: var(--cream);
+    font-size: 1em;
+}
+
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px), print {
+@media screen and (min-width: 630px),
+print {
 
     /* Tablet Viewport: show tablet-desktop class, hide mobile class*/
     .tablet-desktop {
         display: block;
     }
 
-    .mobile {
+    .mobile,
+    .mobile-nav,
+    #gallery .mobile {
         display: none;
     }
 
-    h1 {
+    header h1 {
         font-size: 4em;
+    }
+
+    nav {
+        background-color: var(--olive);
+        padding: 0 2% 2% 2%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
     }
 
     nav ul li {
@@ -108,16 +218,118 @@ nav ul li a {
         display: inline-block;
         padding: 1%;
         font-family: 'Raleway', sans-serif;
-        font-size: 1.25em;
+        font-size: 1.5em;
+        margin: 0;
     }
 
+    nav ul li a {
+        text-decoration: none;
+        color: var(--cream);
+    }
 
+    nav ul li:hover {
+        background-color: var(--dark-olive);
+    }
+
+    .featured-links .tablet-desktop {
+        margin: 2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 1.45em;
+        margin: 0 10%;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    #gallery {
+        display: flex;
+        margin: 0 10%;
+        align-items: center;
+    }
+
+    .visit {
+        width: 35%;
+        padding: 3%;
+    }
+
+    .visit h1 {
+        color: var(--burnt-orange)
+    }
+
+    .visit p {
+        color: var(--cream);
+        background-color: var(--burnt-orange);
+        padding: 3%;
+        margin: 3%;
+        border-radius: 10px;
+    }
+
+    .visit a {
+        text-decoration: none;
+    }
+
+    .photos {
+        padding: 3%;
+        width: 65%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+    }
+
+    footer {
+        margin: 3%;
+    }
+
+    #gallery .tablet-desktop {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin: 1% 0;
+        align-items: center;
+    }
+
+    #gallery .tablet-desktop img {
+        width: 600px;
+
+    }
+
+    h2 {
+        text-align: center;
+        font-family: "Carter One", Arial, sans-serif;
+        font-size: 2em;
+        color: var(--olive);
+    }
+
+    fieldset,
+    input,
+    textarea {
+        font-size: 1em;
+        max-width: 700px;
+    }
+
+    #submit {
+        background-color: var(--olive);
+        color: var(--cream);
+        font-size: 1em;
+    }
 
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1015px), print {
+@media screen and (min-width: 1015px),
+print {
     nav ul li:hover {
         background-color: var(--dark-olive);
+    }
+
+    .visit p:hover,
+    .pictext:hover {
+        background-color: var(--tan);
     }
 }
