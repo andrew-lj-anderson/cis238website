@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- 
+Group Website Project
+Fishing page author: Preston Speidel
+!-->
+
+<html lang="en">
+
+<head>
+	<title>Fishing | Outdoor Adventures</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/fishing-boating.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Carter+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<!-- use the header area for the website name or logo -->
+	<header>
+		<h1 class="mobile">Outdoor<br>Adventures</h1>
+		<h1 class="tablet-desktop">Outdoor Adventures</h1>
+	</header>
+	<!-- use the nav area to add hyperlinks to other pages within the site-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="fishing.html">Fishing</a>
+			<a href="boating.html">Boating</a>
+			<a href="photos.html">Photos</a>
+			<a href="safety.html">Safety</a>
+			<a href="hiking.html">Hiking</a>
+			<a href="camping.html">Camping</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="destinations.html">Destinations</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="fishing.html">Fishing</a></li>
+			<li><a href="boating.html">Boating</a></li>
+			<li><a href="photos.html">Photos</a></li>
+			<li><a href="safety.html">Safety</a></li>
+			<li><a href="hiking.html">Hiking</a></li>
+			<li><a href="camping.html">Camping</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="destinations.html">Destinations</a></li>
+		</ul>
+	</nav>
+	<!-- use the main area to add to the main content of the webpage-->
+	<main>
+
+		<!-- Hero Section -->
+		<section class="hero">
+			<img src="images/fishing-images/hero.png" alt="Person fishing at a calm lake at sunrise from a dock or shoreline">
+			<div class="hero-text">
+				<h2>Fishing</h2>
+				<p>Best fishing spots, helpful gear, and tips for a successful day on the water</p>
+			</div>
+		</section>
+
+		<!-- Intro Section -->
+		<section class="intro-section">
+			<p>Fishing is one of the best ways to enjoy the outdoors, relax, and spend time with family or friends. Whether you are fishing from the shore, a dock, or a boat, it is a fun activity for beginners and experienced anglers. This page shares great places to fish, gear to bring, and simple tips to help make your fishing trip more successful.</p>
+		</section>
+
+		<!-- Popular Fishing Spots -->
+		<section class="content-section">
+			<h2>Popular Fishing Spots</h2>
+			<div class="section-row">
+				<div class="section-text">
+					<p>There are many great places to fish, from small local ponds to large lakes and rivers. Lakes are popular for catching bass, bluegill, pike, and perch. Rivers and streams can also be great spots, especially for trout and other freshwater fish. Many public parks, boat launches, and recreation areas offer easy access to fishing locations. Before going, it is always a good idea to check local fishing regulations and make sure you have the correct fishing license if one is required.</p>
+					<p>Some of the best places to fish usually have:</p>
+					<ul>
+						<li>Calm water or areas with cover like weeds, docks, or fallen trees</li>
+						<li>Public access points or fishing piers</li>
+						<li>Areas known for healthy fish populations</li>
+						<li>Early morning or evening activity when fish are more active</li>
+					</ul>
+				</div>
+				<div class="section-image">
+					<img src="images/fishing-images/fishing_spots.png" alt="Scenic fishing spot with water, trees, and a dock or boat launch">
+				</div>
+			</div>
+		</section>
+
+		<!-- Fishing Gear -->
+		<section class="content-section alt-bg">
+			<h2>Fishing Gear to Bring</h2>
+			<div class="section-row reverse">
+				<div class="section-text">
+					<p>Having the right gear can make fishing easier and more enjoyable. Beginners do not need a lot of expensive equipment to get started. A simple rod and reel, bait, and a small tackle box can be enough for a good day of fishing.</p>
+					<p>Helpful fishing gear includes:</p>
+					<ul>
+						<li>Fishing rod and reel</li>
+						<li>Hooks, sinkers, and bobbers</li>
+						<li>Live bait or artificial lures</li>
+						<li>Tackle box</li>
+						<li>Fishing line</li>
+						<li>Needle nose pliers</li>
+						<li>Net</li>
+						<li>Bucket or cooler</li>
+						<li>Sunscreen</li>
+						<li>Hat and sunglasses</li>
+						<li>Water and snacks</li>
+					</ul>
+					<p>If you plan to keep fish, you may also want to bring a cooler with ice. If you are catch-and-release fishing, handle fish carefully and return them to the water as quickly as possible.</p>
+				</div>
+				<div class="section-image">
+					<img src="images/fishing-images/fishing_gear.png" alt="Fishing gear laid out including a rod, reel, tackle box, hooks, lures, and bobbers">
+				</div>
+			</div>
+		</section>
+
+		<!-- Fishing Tips -->
+		<section class="content-section">
+			<h2>Fishing Tips</h2>
+			<div class="section-row">
+				<div class="section-text">
+					<p>A few simple tips can make a big difference when fishing. Try going early in the morning or later in the evening, since fish are often more active during those times. Look for shaded areas, weeds, rocks, and docks where fish may be hiding. Be patient and willing to change bait or move to another location if you are not getting bites.</p>
+					<p>Helpful fishing tips:</p>
+					<ul>
+						<li>Be quiet near the water so you do not scare fish away</li>
+						<li>Watch the weather before leaving</li>
+						<li>Use bait that matches the type of fish you want to catch</li>
+						<li>Keep your fishing gear organized</li>
+						<li>Learn the size and bag limits for your area</li>
+						<li>Stay patient and enjoy the experience</li>
+					</ul>
+					<p>Fishing is not only about catching fish. It is also about being outside, enjoying nature, and making good memories.</p>
+				</div>
+				<div class="section-image">
+					<img src="images/fishing-images/fishing_tips.png" alt="Person holding a fish near the water with a natural outdoor background">
+				</div>
+			</div>
+		</section>
+
+		<!-- Why People Love Fishing -->
+		<section class="why-section">
+			<h2>Why People Love Fishing</h2>
+			<p>Fishing gives people a chance to slow down and enjoy the outdoors. It can be peaceful and relaxing, but it can also be exciting when you finally get a bite. Many people enjoy fishing because it brings together patience, skill, and time in nature. Whether you catch a lot of fish or just enjoy being by the water, fishing is a great outdoor activity for all ages.</p>
+		</section>
+
+		<!-- Bottom Image Row -->
+		<div class="image-row">
+			<img src="images/fishing-images/bottom_row1.png" alt="Peaceful fishing scene by a lake at sunrise">
+			<img src="images/fishing-images/bottom_row2.png" alt="Angler casting a fishing rod with trees in the background">
+		</div>
+
+	</main>
+	<!--use the footer area to add webpage footer content-->
+	<footer>
+		<p>&copy; Copyright 2026. All Rights Reserved.</p>
+	</footer>
+	<script src="scripts/scripts.js"></script>
+</body>
+
+</html>
