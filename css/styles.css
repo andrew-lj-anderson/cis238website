@@ -72,6 +72,19 @@ p {
     font-size: 1em;
 }
 
+label {
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark-olive);
+    margin: 2% 0;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+::placeholder {
+    font-family: 'Raleway', sans-serif;
+}
+input {
+    font-family: 'Raleway', sans-serif;
+}
 /* style rules for body and images */
 body {
     background-color: var(--cream);
@@ -481,6 +494,10 @@ print {
 
     h1 {
         font-size: 4em;
+    }
+
+    input, input#submit, label, ::placeholder {
+        font-size: 24px;
     }
 
     #gallery {
